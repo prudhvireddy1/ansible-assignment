@@ -1,0 +1,5 @@
+---
+ - name: starting  "{{ mypackage }}" service
+   service:
+     name: "{{ mypackage }}"
+     state: started     

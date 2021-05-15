@@ -1,0 +1,5 @@
+---
+ - name: strating the nginx service
+   service: 
+     name: nginx
+     state: restarted

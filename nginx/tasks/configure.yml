@@ -1,0 +1,6 @@
+---
+ - name: placing custom file
+   copy: 
+     src: index.html
+     dest: /var/www/html
+

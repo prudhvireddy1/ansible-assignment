@@ -1,0 +1,15 @@
+---
+
+
+ - name: install  "{{ mypackage }}"
+
+   apt:
+     name: "{{ mypackage }}"
+     state: latest
+
+
+
+
+
+
+
