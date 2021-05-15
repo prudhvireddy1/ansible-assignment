@@ -1,0 +1,25 @@
+---
+
+
+ - name: insatlling java on test servers
+   hosts: test
+   become: yes
+   tasks:
+     - name: inatll java
+       apt:
+         update_cache: yes 
+         name: openjdk-8-jdk
+         state: latest
+         install_recommends: no
+
+ - name: installing mysql on prod servers
+   hosts: prod
+   become: yes
+   tasks:
+     - name: install mysql
+       apt:
+         update_cache: yes
+         name:  mysql-server
+         state: latest
+
+

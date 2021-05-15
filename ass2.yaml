@@ -1,0 +1,8 @@
+---
+ - name: running script on host servers
+   hosts: webservers
+   become: true
+   tasks:
+     - name: running a script
+       script: text.sh
+
