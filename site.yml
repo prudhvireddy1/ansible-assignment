@@ -1,0 +1,13 @@
+---
+ - hosts: host1
+   become: true
+   vars:
+     mypackage: apache2
+   roles:
+     - ansible-new
+ - hosts: host2
+   become: true
+   vars:
+     mypackage: nginx
+   roles:
+     - ansible-new

@@ -1,0 +1,13 @@
+---
+ - hosts: host1
+   become: true
+   roles:
+     - apache
+     - java  
+
+
+ - hosts: host2
+   become: true
+   roles:
+     - nginx
+
